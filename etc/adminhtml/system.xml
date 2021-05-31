@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wi24" translate="label" sortOrder="150">
+            <label>WEBiDEA</label>
+        </tab>
+        <section id="wi24_custom_success_page" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Custom success page</label>
+            <tab>wi24</tab>
+            <resource>Webidea24_CustomSuccessPage::config</resource>
+
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1">
+                <label>General</label>
+                <field id="static_block" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1">
+                    <label>Static Block</label>
+                    <source_model>Magento\Cms\Model\ResourceModel\Block\Collection</source_model>
+                    <comment><![CDATA[Use the variable <b>%order-number%</b> in the static block to output the order number.<br>Please add the variable <b>%additional-info-html%</b> to your static content to output the content of third-party extensions.<br>Use the Variable <b>%registration-block%</b> to output the registration block.]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

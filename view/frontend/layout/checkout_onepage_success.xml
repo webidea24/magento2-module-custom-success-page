@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Webidea24\CustomSuccessPage\Block\SuccessPage" name="checkout.success" template="Webidea24_CustomSuccessPage::success.phtml" cacheable="false">
+                <container name="order.success.additional.info" label="Order Success Additional Info"/>
+            </block>
+        </referenceContainer>
+
+        <move element="checkout.registration" destination="checkout.success" />
+        <referenceBlock name="page.main.title" remove="true" />
+        <referenceBlock name="checkout.success.print.button" remove="true" />
+    </body>
+</page>

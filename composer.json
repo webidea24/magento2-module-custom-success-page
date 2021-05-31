@@ -1,0 +1,16 @@
+{
+    "name": "webidea24/magento2-module-custom-success-page",
+    "description": "Magento 2 Module - Custom Success Page",
+    "license": [
+        "MIT"
+    ],
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Webidea24\\CustomSuccessPage\\": ""
+        }
+    }
+}
